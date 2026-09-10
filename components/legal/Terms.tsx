@@ -51,6 +51,7 @@ export const Terms: React.FC<Props> = ({ onBack }) => {
                     <p className="text-slate-600 text-sm">
                         3.1 ZenTrack verleent de Klant een niet-exclusief, niet-overdraagbaar recht om de software te gebruiken voor de duur van de overeenkomst.
                         <br/>3.2 Het is de Klant niet toegestaan de software te verkopen, verhuren of reverse-engineeren.
+                        <br/>3.3 <strong>Fair use:</strong> teamleden, facturen en vragen aan de assistent zijn onbeperkt bij normaal praktijkgebruik. Bij uitzonderlijk gebruik — bijvoorbeeld geautomatiseerd bevragen van de assistent of het in één keer aanleveren van een volledige archiefadministratie — neemt ZenTrack eerst contact op met de Klant voordat enige beperking wordt toegepast.
                     </p>
                 </section>
 

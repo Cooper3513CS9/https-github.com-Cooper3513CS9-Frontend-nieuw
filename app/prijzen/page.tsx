@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: 'Wat telt als een locatie?',
-    a: 'Eén locatie is één bezoekadres met eigen voorraad. Teamleden en facturen zijn onbeperkt; je betaalt nooit per gebruiker of per factuur.',
+    a: 'Eén locatie is één bezoekadres met eigen voorraad. Teamleden en facturen zijn onbeperkt bij normaal praktijkgebruik; je betaalt nooit per gebruiker of per factuur.',
   },
   {
     q: 'Is er een gratis versie van ZenTrack?',

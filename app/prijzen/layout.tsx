@@ -37,7 +37,7 @@ const faqSchema = {
       name: 'Wat telt als een locatie?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'Eén locatie is één bezoekadres met eigen voorraad. Teamleden en facturen zijn onbeperkt; je betaalt nooit per gebruiker of per factuur.',
+        text: 'Eén locatie is één bezoekadres met eigen voorraad. Teamleden en facturen zijn onbeperkt bij normaal praktijkgebruik; je betaalt nooit per gebruiker of per factuur.',
       },
     },
     {

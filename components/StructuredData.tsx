@@ -76,7 +76,7 @@ const softwareApplicationSchema = {
         },
       },
       description:
-        "Eén product met alles erin, per locatie (bezoekadres): bestelvoorstellen met JA-goedkeuring via WhatsApp, doorlopende prijsbewaking, vervaldatum-alerts, pakbon-controle, visitatie-bewijsrapport en onbeperkt team. Founding-tarief €79 per maand bij 12 maanden. 60-dagen-garantie.",
+        "Eén product met alles erin, per locatie (bezoekadres): bestelvoorstellen met JA-goedkeuring via WhatsApp, doorlopende prijsbewaking, vervaldatum-alerts, pakbon-controle, visitatie-bewijsrapport en onbeperkt team (fair use). Founding-tarief €79 per maand bij 12 maanden. 60-dagen-garantie.",
       url: "https://app.zentrack.nl/sign-up",
     },
   ],
@@ -142,7 +142,7 @@ const faqSchema = {
       name: "Wat telt als een locatie?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Elk bezoekadres met een eigen voorraad telt als één locatie. Een gezondheidscentrum met drie vestigingen heeft dus drie ZenTrack-locaties. Binnen een locatie zijn team en facturen onbeperkt.",
+        text: "Elk bezoekadres met een eigen voorraad telt als één locatie. Een gezondheidscentrum met drie vestigingen heeft dus drie ZenTrack-locaties. Binnen een locatie zijn team en facturen onbeperkt bij normaal praktijkgebruik.",
       },
     },
     {

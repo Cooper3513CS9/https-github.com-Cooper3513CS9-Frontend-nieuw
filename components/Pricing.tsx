@@ -66,7 +66,7 @@ export const Pricing: React.FC<PricingProps> = ({ onRegisterClick }) => {
                 <Zap className="w-6 h-6" />
               </div>
               <h3 className="text-xl font-bold text-slate-900">ZenTrack Compleet</h3>
-              <p className="text-slate-500 text-sm mt-2 min-h-[60px]">Alles erin. Eén prijs per locatie, team en facturen onbeperkt.</p>
+              <p className="text-slate-500 text-sm mt-2 min-h-[60px]">Alles erin. Eén prijs per locatie, team en facturen onbeperkt bij normaal praktijkgebruik.</p>
             </div>
             <div className="mb-1">
               <span className="text-4xl font-bold text-slate-900">€79</span>

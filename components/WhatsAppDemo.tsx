@@ -76,7 +76,7 @@ const renderWhatsAppText = (text: string) =>
       invoiceContent = `
         FACTUUR ANALYSE - LEVERANCIER A:
         Datum: 06-06-2026
-        Leverancier: Supplier A BV
+        Leverancier: Leverancier A BV
         Ordernummer: #ORD-2026-882
 
         Regels:
@@ -90,8 +90,7 @@ const renderWhatsAppText = (text: string) =>
         Totaal: € 184,53
 
         INZICHT: je betaalt nu € 8,95/dz voor Nitril M.
-        Op basis van je eigen historie kun je hier besparen.
-        Geschatte besparing: €12-25 per bestelling
+        Je eigen factuurprijs staat erbij zodra je de volgende factuur uploadt.
 
         — IN HET DASHBOARD —
         ✔ Factuur verwerkt · 4 artikelen toegevoegd
@@ -101,7 +100,7 @@ const renderWhatsAppText = (text: string) =>
       userText = "📦 Pakbon - Leverancier A bestelling aangekomen";
       invoiceContent = `
         PAKBON-CONTROLE - TRACKING #2026-1829:
-        Leverancier: Supplier A BV
+        Leverancier: Leverancier A BV
         Aflever Datum: 06-06-2026 | Aankomst: 09:47
 
         INHOUD GESCAND:
@@ -116,7 +115,7 @@ const renderWhatsAppText = (text: string) =>
         ❌ 5 dozen Gaasjes niet ontvangen (KRITIEK!)
 
         Waarschijnlijke oorzaak: Uit voorraad bij leverancier.
-        Actie: Claim-mail aanmaken + Alternatieve leverancier zoeken?
+        Actie: Claim-mail aanmaken?
 
         — IN HET DASHBOARD —
         ✔ Levering geregistreerd · 2 afwijkingen vastgelegd
@@ -127,12 +126,12 @@ const renderWhatsAppText = (text: string) =>
       invoiceContent = `
         STERIEL PRODUCT SCAN - BARCODE:
         Product: Hechtdraad 3-0 (Zwart) - Steriel Verpakt
-        Fabrikant: Medische Supplier X
+        Fabrikant: Fabrikant X
         Batch Nummer: LOT-B291
         Serienummer: HT3-0-2024-NOV
 
         HOUDBAARHEID:
-        Steriel totaal: 01-04-2027
+        Steriel tot: 01-04-2027
         Huidige datum: 06-06-2026
         Resterende houdbaarheid: ruim 9 maanden ✅ VEILIG
 
@@ -142,33 +141,31 @@ const renderWhatsAppText = (text: string) =>
         Status: OK (geen alert nodig)
 
         ALERT INGESTELD:
-        Reminder op 01-02-2027 (2 maanden voor de vervaldatum)
+        Reminder 30 dagen vooraf — je stelt zelf in hoeveel dagen
 
         — IN HET DASHBOARD —
         ✔ Vervaldatum + kastlocatie vastgelegd
         ✔ Alert ingepland · zichtbaar in de Expiratie Radar
       `;
     } else if (scenario === 'bag') {
-      userText = "👜 Visitetas check - Huisbezoeken voorbereiding";
+      userText = "👜 Dokterstas controleren - huisbezoeken voorbereiden";
       invoiceContent = `
-        HUISARTSENTAS INVENTARIS SCAN:
-        Foto analyse compleet | Beeldherkenning AI: 94% nauwkeurig
+        DOKTERSTAS INVENTARIS SCAN:
 
         ✅ AANWEZIG:
         ✓ Bloeddrukmeter (digitaal) - 1x
         ✓ Stethoscoop - 1x
         ✓ Glucosemeter - 1x met 10 teststrips
         ✓ Thermometer - 1x
-        ✓ Otoscoop/Otoscopie - 1x
-        ✓ Handdoeken desinfectans wipes - 1 pak (7/10 over)
+        ✓ Otoscoop - 1x
+        ✓ Desinfectiedoekjes - 1 pak (7/10 over)
 
         ❌ ONTBREEKT:
         ✗ Adrenaline Ampul 0,3mg (KRITIEK!)
         ✗ Elastische drukverband 6cm - alleen 1 beschikbaar, minstens 2 nodig
         ⚠️ Paracetamol 500mg tabletten - Stock onvoldoende (2 tablets over, min. 10 nodig)
 
-        BEVEILIGINGSSTATUS: 🚨 ONVEILIG VOOR HUISBEZOEKEN
-        Ontbrekende medicatie: Adrenaline is CRITICA voor cardiale noodsituaties!
+        3 items onder je eigen minimum — dit is wat je zelf hebt ingesteld.
 
         AANBEVELING: Zet deze items DIRECT klaar in de assistentenkamer:
         1. Adrenaline Ampul (prioriteit: HOOG)
@@ -179,7 +176,7 @@ const renderWhatsAppText = (text: string) =>
 
         — IN HET DASHBOARD —
         ✔ Tas-inventaris bijgewerkt
-        ✔ Aanvullijst klaargezet voor jouw akkoord
+        ✔ Items onder minimum staan in je Voorraadkast
       `;
     } else {
       userText = "🔍 QR scan: Behandelkamer - voorraadcheck";
@@ -191,7 +188,7 @@ const renderWhatsAppText = (text: string) =>
 
         PRODUCT HERKEND:
         Artikel: Alcohol 70% Desinfectans - 500ml fles
-        Fabrikant: Supplier B
+        Fabrikant: Fabrikant B
         Barcode: EAN-8718789046502
         In Systeem Registered: 2 flessen
 
@@ -202,12 +199,9 @@ const renderWhatsAppText = (text: string) =>
 
         BIJZONDERHEDEN:
         Vervaldatum: 30-06-2027 (nog ruim een jaar geldig) ✅
-        Opslag optimaal: Donkere plek, koel, droog ✓
-        Gebruikstatus: Matig gebruik (afgelopen week 2x gebruikt)
 
         SYSTEMUPDATE:
         Voorraadstatus: COMPLEET
-        Volgende inventaris: Automatisch gepland over 4 weken
         Alert: Geen urgent aanvulling nodig
       `;
     }

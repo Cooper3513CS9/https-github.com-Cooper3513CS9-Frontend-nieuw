@@ -33,7 +33,7 @@ export const FAQ: React.FC = () => {
     },
     {
       question: "Wat telt als een locatie?",
-      answer: "Elk bezoekadres met een eigen voorraad telt als één locatie. Een gezondheidscentrum met drie vestigingen heeft dus drie ZenTrack-locaties. Binnen een locatie zijn team en facturen onbeperkt: iedereen een eigen inlog met een eigen rol."
+      answer: "Elk bezoekadres met een eigen voorraad telt als één locatie. Een gezondheidscentrum met drie vestigingen heeft dus drie ZenTrack-locaties. Binnen een locatie zijn team en facturen onbeperkt bij normaal praktijkgebruik: iedereen een eigen inlog met een eigen rol."
     },
     {
       question: "Hoe werkt de vervaldatum-bewaking (Expiratie Radar)?",

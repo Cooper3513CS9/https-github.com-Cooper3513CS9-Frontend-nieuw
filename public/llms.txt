@@ -26,7 +26,7 @@ Nederlandse huisartsenpraktijken, gezondheidscentra en zorggroepen die tijd will
 - Gratis inkoop-check: EUR 0, vrijblijvend, geen creditcard
 - ZenTrack Compleet: EUR 99 per locatie per maand (maandelijks opzegbaar); founding-tarief EUR 79 per maand bij 12 maanden
 - Meerdere locaties: staffelkorting op aanvraag vanaf vijf locaties; zorggroepen vanaf twintig locaties: partnerschap op maat (zie https://www.zentrack.nl/zorggroepen)
-- Eén locatie = één bezoekadres met eigen voorraad; team en facturen onbeperkt
+- Eén locatie = één bezoekadres met eigen voorraad; team en facturen onbeperkt bij normaal praktijkgebruik (fair use: bij uitzonderlijk gebruik nemen we eerst contact op)
 - 60-dagen-garantie: wijst ZenTrack minder besparing aan dan het abonnement kostte, dan stopt de klant per direct en betaalt ZenTrack het verschil terug (voorwaarde: volledige 12 maanden facturen geüpload binnen 30 dagen)
 
 ## Technologie
