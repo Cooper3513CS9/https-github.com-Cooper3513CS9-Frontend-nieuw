@@ -60,7 +60,7 @@ const generateSmartFallback = (invoiceText: string): string => {
     const productName = productMatch ? productMatch[1].trim() : 'dit product';
 
     if (text.includes('kritiek')) {
-      return `🚨 **Kritiek Alert!**\n\n${productName} verloopt binnenkort.\n\n❌ Direct aanvullen nodig!\n📧 Automatische reminder actief\n⏰ Alert: 2 maanden voor expiratie`;
+      return `🚨 **Kritiek Alert!**\n\n${productName} verloopt binnenkort.\n\n❌ Direct aanvullen nodig!\n⏰ Alert 30 dagen vooraf — je stelt zelf in hoeveel dagen`;
     } else if (text.includes('veilig')) {
       return `✅ **Houdbaarheid OK**\n\n${productName} is veilig tot 2026.\n\n📌 Automatische reminder ingesteld\n🟢 Status: Goed opgeslagen`;
     }
@@ -75,7 +75,7 @@ const generateSmartFallback = (invoiceText: string): string => {
         missingList = '❌ Enkele items ontbreken';
       }
 
-      return `⚠️ **Mismatch Gedetecteerd!**\n\n${missingList}\n\n📧 Automatisch claim-email aangemaakt\n💡 Alternatieve leverancier zoeken?`;
+      return `⚠️ **Mismatch Gedetecteerd!**\n\n${missingList}\n\n📧 Claim-concept klaargezet — jij verstuurt hem zelf`;
     } else {
       return "✅ **Pakbon Geverifieerd**\n\nAlle items ontvangen ✓\n\n📦 Voorraad automatisch bijgewerkt\n🟢 Klaar voor gebruik";
     }
@@ -91,7 +91,7 @@ const generateSmartFallback = (invoiceText: string): string => {
         criticalItems += '⚠️ Drukverband tekort\n';
       }
 
-      return `🚨 **Visitetas ONVEILIG!**\n\n${criticalItems || '❌ Kritieke items ontbreken\n'}\n⏰ Klaarmaaktijd: 5 minuten max`;
+      return `⚠️ **Items onder je eigen minimum**\n\n${criticalItems || '❌ Kritieke items ontbreken\n'}`;
     } else if (text.includes('ontbreekt')) {
       return "⚠️ **Enkele Items Nodig**\n\nTas is bijna compleet.\n\n✓ Voeg ontbrekende items toe\n✓ Check in 5 minuten\n\n🟢 Ready voor huisbezoeken!";
     }
@@ -102,9 +102,9 @@ const generateSmartFallback = (invoiceText: string): string => {
     const productName = productMatch ? productMatch[1].trim() : 'dit product';
 
     if (text.includes('compleet') || text.includes('correct')) {
-      return `✅ **Voorraad Compleet**\n\n${productName}\n\n📅 Volgende check: 21-12-2025\n🟢 Status: CORRECT`;
+      return `✅ **Voorraad Compleet**\n\n${productName}\n\n🟢 Status: CORRECT`;
     } else if (text.includes('leeg') || text.includes('70%') || text.includes('onvoldoende')) {
-      return `⚠️ **Artikel Bijna Op**\n\n${productName} gaat binnenkort op.\n\n📋 Automatisch op bestellijst\n💡 Vandaag al bestellen?`;
+      return `⚠️ **Artikel Bijna Op**\n\n${productName} gaat binnenkort op.\n\n📋 Zichtbaar in je Voorraadkast\n💡 Vandaag al bestellen?`;
     }
   }
 
