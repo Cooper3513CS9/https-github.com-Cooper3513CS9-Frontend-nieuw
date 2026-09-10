@@ -3,7 +3,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { ArrowRight, Check, Network } from 'lucide-react';
+import { ArrowRight, Check, Network, ShieldCheck, LineChart, Handshake, CalendarClock, Camera, QrCode, Printer, MessageCircle } from 'lucide-react';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { GroupSection } from '@/components/GroupSection';
@@ -29,123 +29,143 @@ export default function ZorggroepenPage() {
               ZenTrack voor zorggroepen
             </h1>
             <p className="text-lg md:text-xl text-slate-700 leading-relaxed">
-              Uw zorgmedewerkers op de locatie werken gewoon via WhatsApp. Geen nieuwe software om te leren,
-              geen implementatietraject, het werkt vanaf de eerste dag. Wat nu op papieren lijstjes staat en
-              tijd kost, voorraad bijhouden, vervaldatums nalopen, bestellingen doorgeven, gaat met een foto
-              of een appje.
+              Uw zorgmedewerkers werken gewoon via WhatsApp. Geen nieuwe software om te leren, geen
+              implementatietraject. Wat nu op papieren lijstjes staat en tijd kost, gaat met een foto of een appje.
             </p>
             <p className="text-lg text-slate-700 mt-4 leading-relaxed">
-              Daarnaast krijgt u iets dat nu nergens bij elkaar staat: <strong>het inkoopbeeld van de hele
-              groep op productniveau</strong>. Welke artikelen uw locaties samen verbruiken, hoeveel, hoe vaak
-              en bij wie. Verantwoording blijft per locatie, met één factuur voor alles en een uitrol in uw
-              eigen tempo.
+              En u krijgt iets dat nu nergens bij elkaar staat: <strong>het inkoopbeeld van de hele groep op
+              productniveau</strong>. Welke artikelen uw locaties samen verbruiken, hoeveel, hoe vaak en bij wie.
             </p>
-            <p className="text-base text-slate-600 mt-4 leading-relaxed">
-              Het gaat om medische verbruiksartikelen en kantoorartikelen. Medicijnen kopen we niet in en
-              vergelijken we niet op prijs, dat loopt via uw apotheek. Vervaldatums bewaken we wel van alles wat
-              in uw kasten ligt, inclusief de medicatie die u zelf op voorraad heeft.
-            </p>
-            <p className="text-base text-slate-600 mt-4 leading-relaxed">
-              Eén locatie (bezoekadres) telt als één ZenTrack. Vanaf vijf locaties geldt een staffelkorting
-              op aanvraag; voor grotere zorggroepen maken we een partnerschap op maat en leggen we de afspraken
-              in het gesprek vast. <Link href="/prijzen" className="text-purple-700 underline">Bekijk de prijzen</Link>.
+            <p className="text-sm text-slate-500 mt-6 leading-relaxed">
+              Medische verbruiksartikelen en kantoorartikelen. Medicijnen kopen we niet in en vergelijken we niet
+              op prijs, dat loopt via uw apotheek; vervaldatums bewaken we wel, ook van uw eigen
+              medicatievoorraad. Eén locatie (bezoekadres) telt als één ZenTrack, vanaf vijf locaties geldt een
+              staffelkorting op aanvraag en voor grotere zorggroepen maken we een partnerschap op maat.{' '}
+              <Link href="/prijzen" className="text-purple-700 underline">Bekijk de prijzen</Link>.
             </p>
           </div>
         </section>
 
-        {/* WAT U KRIJGT — volgorde: rust, inkoopbeeld, positie, timing */}
-        <section className="py-16 bg-white">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-slate-900 mb-10">Wat u krijgt, in deze volgorde</h2>
-            <div className="space-y-8">
-              <div>
-                <h3 className="font-bold text-slate-900 text-lg mb-2">1. Rust op de locatie</h3>
-                <p className="text-slate-600 leading-relaxed">
-                  De zorgmedewerker fotografeert een pakbon in plaats van een lijstje af te vinken.
-                  Vervaldatums worden bewaakt. Een bestelling is één JA in WhatsApp. Hier verdient het
-                  abonnement zich terug: in tijd van de mensen op de vloer en in niet misgrijpen wanneer
-                  het nodig is.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-bold text-slate-900 text-lg mb-2">2. Het inkoopbeeld van de groep</h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Na een paar maanden weet u op productniveau wat uw locaties samen verbruiken, over alle
-                  leveranciers heen. Uw financiële software laat zien wat een locatie heeft uitgegeven. Dit
-                  laat zien aan welke producten, in welke aantallen en tegen welke prijs. Die stukken liggen
-                  nu verspreid over facturen, mailboxen en webshops. Wij leggen ze bij elkaar.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-bold text-slate-900 text-lg mb-2">3. Een betere positie in uw gesprekken</h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Met dat beeld gaat u zelf met uw leveranciers in gesprek: deze dertig artikelen kopen wij
-                  samen zoveel keer per jaar. Dat werkt door op alle locaties tegelijk. Wat wij aan
-                  prijsverschillen aanwijzen is het bewijs dat de cijfers kloppen, het is niet de rekensom
-                  waarop u ons afrekent.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-bold text-slate-900 text-lg mb-2">4. Wanneer wat nodig is, per locatie</h3>
-                <p className="text-slate-600 leading-relaxed">
-                  Omdat elke locatie haar eigen verbruik opbouwt, ziet u niet alleen wát er gekocht wordt maar
-                  ook wanneer. Dat maakt bestellen rustiger: op tijd in plaats van met spoed, en in
-                  hoeveelheden die passen bij wat er werkelijk doorgaat.
-                </p>
-              </div>
-              <div className="p-5 bg-purple-50 border border-purple-100 rounded-2xl">
-                <p className="text-slate-700 leading-relaxed">
-                  <strong>Loopt een locatie uit de pas, dan ziet u dat direct.</strong> Betaalt de één meer voor
-                  precies hetzelfde product omdat er nog een oude afspraak ligt, dan is dat geen onderhandeling
-                  maar één telefoontje.
-                </p>
-              </div>
+        {/* WAT U KRIJGT — vier kaarten, volgorde: rust, inkoopbeeld, positie, timing */}
+        <section className="py-20 bg-white">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Wat u krijgt, in deze volgorde</h2>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                Eerst rust op de vloer, daarna het inzicht waarmee u zelf onderhandelt.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  icon: ShieldCheck,
+                  titel: 'Rust op de locatie',
+                  tekst: 'De zorgmedewerker fotografeert een pakbon in plaats van een lijstje af te vinken. Vervaldatums worden bewaakt. Een bestelling is één JA in WhatsApp. Hier verdient het abonnement zich terug: in tijd van de mensen op de vloer en in niet misgrijpen wanneer het nodig is.',
+                },
+                {
+                  icon: LineChart,
+                  titel: 'Het inkoopbeeld van de groep',
+                  tekst: 'Na een paar maanden weet u op productniveau wat uw locaties samen verbruiken, over alle leveranciers heen. Uw financiële software laat zien wat een locatie heeft uitgegeven. Dit laat zien aan welke producten, in welke aantallen en tegen welke prijs.',
+                },
+                {
+                  icon: Handshake,
+                  titel: 'Een betere positie in uw gesprekken',
+                  tekst: 'Met dat beeld gaat u zelf met uw leveranciers in gesprek: deze dertig artikelen kopen wij samen zoveel keer per jaar. Dat werkt door op alle locaties tegelijk. Wat wij aan prijsverschillen aanwijzen is het bewijs dat de cijfers kloppen.',
+                },
+                {
+                  icon: CalendarClock,
+                  titel: 'Wanneer wat nodig is, per locatie',
+                  tekst: 'Omdat elke locatie haar eigen verbruik opbouwt, ziet u niet alleen wát er gekocht wordt maar ook wanneer. Dat maakt bestellen rustiger: op tijd in plaats van met spoed, en in hoeveelheden die passen bij wat er werkelijk doorgaat.',
+                },
+              ].map((item, i) => (
+                <div key={i} className="bg-white rounded-2xl p-6 border border-purple-100 shadow-sm">
+                  <div className="w-12 h-12 bg-purple-50 border border-purple-100 rounded-xl flex items-center justify-center text-purple-600 mb-4">
+                    <item.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-lg font-bold text-slate-900 mb-2">{item.titel}</h3>
+                  <p className="text-slate-600 leading-relaxed text-[15px]">{item.tekst}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 p-6 bg-purple-50 border border-purple-100 rounded-2xl">
+              <p className="text-slate-700 leading-relaxed">
+                <strong>Loopt een locatie uit de pas, dan ziet u dat direct.</strong> Betaalt de één meer voor
+                precies hetzelfde product omdat er nog een oude afspraak ligt, dan is dat geen onderhandeling
+                maar één telefoontje.
+              </p>
             </div>
           </div>
         </section>
 
-        {/* OP DE LOCATIE — drie startsituaties, geen drempel */}
-        <section className="py-16 bg-slate-50 border-y border-slate-100">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Op de locatie verandert uw manier van werken niet</h2>
-            <p className="text-slate-600 leading-relaxed mb-8">
-              Veel locaties hebben helemaal geen systeem, andere werken met kaartjes of stickers van een
-              leverancier. Alle drie de situaties kunnen.
-            </p>
-            <div className="space-y-6">
-              <p className="text-slate-600 leading-relaxed">
-                <strong className="text-slate-900">Werkt u nu met niets.</strong> Dan begint u met foto&apos;s: een
-                pakbon, een doosje met een vervaldatum, een kastplek met een aantal erbij. Er is niets te
-                installeren en niets in te richten.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                <strong className="text-slate-900">Hangen er al stickers of kanban-kaarten.</strong> Die kunnen
-                blijven hangen. De camera leest de code en koppelt hem aan uw product zodra dat artikel op een
-                van uw facturen is voorgekomen.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                <strong className="text-slate-900">Wilt u het netjes inrichten.</strong> Dan levert ZenTrack
-                etiketten voor uw kastplekken als PDF, die u zelf print. Een lege bak betekent dan: scannen, en
-                het staat op de lijst. Dat is het kanban-principe, zonder kaartenbak en zonder dat iemand aan
-                het eind van de week een lijstje moet overtypen.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                <strong className="text-slate-900">Afspraken blijven op de locatie, ook als iemand weggaat.</strong>{' '}
-                Per locatie legt u vast wat voor die plek geldt: levertijden, wie bestelt, welke merken wel en
-                niet, afspraken met een leverancier. Een waarnemer of nieuwe medewerker vraagt het op in de chat
-                in plaats van het rond te moeten vragen. Vragen over hoe iets werkt kunnen daar ook: de chat is
-                de vraagbaak, zodat niet iedere keer dezelfde vraag bij u of bij de praktijkmanager belandt.
-              </p>
-              <p className="text-slate-600 leading-relaxed">
-                Elke locatie houdt haar eigen kastindeling, haar eigen minimale aantallen en haar eigen
-                leveranciers. ZenTrack past zich daarop aan, niet omgekeerd.
+        {/* OP DE LOCATIE — drie startsituaties als kaarten */}
+        <section className="py-20 bg-slate-50 border-y border-slate-100">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                Op de locatie verandert uw manier van werken niet
+              </h2>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                Veel locaties hebben helemaal geen systeem, andere werken met kaartjes of stickers van een
+                leverancier. Alle drie de situaties kunnen.
               </p>
             </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: Camera,
+                  titel: 'Werkt u nu met niets',
+                  tekst: 'Dan begint u met foto’s: een pakbon, een doosje met een vervaldatum, een kastplek met een aantal erbij. Er is niets te installeren en niets in te richten.',
+                },
+                {
+                  icon: QrCode,
+                  titel: 'Hangen er al stickers of kanban-kaarten',
+                  tekst: 'Die kunnen blijven hangen. De camera leest de code en koppelt hem aan uw product zodra dat artikel op een van uw facturen is voorgekomen.',
+                },
+                {
+                  icon: Printer,
+                  titel: 'Wilt u het netjes inrichten',
+                  tekst: 'Dan levert ZenTrack etiketten voor uw kastplekken als PDF, die u zelf print. Een lege bak betekent: scannen, en het staat op de lijst. Het kanban-principe zonder kaartenbak.',
+                },
+              ].map((item, i) => (
+                <div key={i} className="bg-white rounded-2xl p-6 border border-slate-200">
+                  <div className="w-12 h-12 bg-slate-50 border border-slate-200 rounded-xl flex items-center justify-center text-slate-600 mb-4">
+                    <item.icon className="w-6 h-6" />
+                  </div>
+                  <h3 className="text-base font-bold text-slate-900 mb-2">{item.titel}</h3>
+                  <p className="text-slate-600 leading-relaxed text-[15px]">{item.tekst}</p>
+                </div>
+              ))}
+            </div>
+
+            <div className="mt-8 bg-white rounded-2xl p-6 border border-slate-200 flex gap-4">
+              <div className="w-12 h-12 bg-emerald-50 border border-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 shrink-0">
+                <MessageCircle className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-base font-bold text-slate-900 mb-2">
+                  Afspraken blijven op de locatie, ook als iemand weggaat
+                </h3>
+                <p className="text-slate-600 leading-relaxed text-[15px]">
+                  Per locatie legt u vast wat voor die plek geldt: levertijden, wie bestelt, welke merken wel en
+                  niet, afspraken met een leverancier. Een waarnemer of nieuwe medewerker vraagt het op in de chat
+                  in plaats van het rond te moeten vragen, en vragen over hoe iets werkt kunnen daar ook. Zo
+                  belandt niet iedere keer dezelfde vraag bij u of bij de praktijkmanager.
+                </p>
+              </div>
+            </div>
+
+            <p className="text-slate-600 leading-relaxed mt-8 text-center max-w-3xl mx-auto">
+              Elke locatie houdt haar eigen kastindeling, haar eigen minimale aantallen en haar eigen
+              leveranciers. ZenTrack past zich daarop aan, niet omgekeerd.
+            </p>
           </div>
         </section>
 
         {/* HET VERHAAL — hergebruikt van de homepage */}
-        <GroupSection />
+        <GroupSection variant="bewijs" />
 
         {/* CONTACT — eigen blok, houdt de zorggroep-lead op deze pagina */}
         <GroupContact />

@@ -1,12 +1,24 @@
 import React from 'react';
 import { Building2, ArrowRight, Network, FileSpreadsheet, AlertCircle, ShieldCheck, Heart, CheckCircle2, LineChart, Receipt } from 'lucide-react';
 
-export const GroupSection: React.FC = () => {
+type GroupSectionProps = {
+  /**
+   * 'full' = homepage: eigen kop, dashboardvoorbeeld, drie pijlers, AFAS-vergelijking.
+   * 'bewijs' = /zorggroepen: alleen het dashboardvoorbeeld en de AFAS-vergelijking.
+   * Die pagina heeft zijn eigen h1 en zijn eigen vier punten; kop en pijlers zouden
+   * dat dubbel zeggen.
+   */
+  variant?: 'full' | 'bewijs';
+};
+
+export const GroupSection: React.FC<GroupSectionProps> = ({ variant = 'full' }) => {
+  const volledig = variant === 'full';
   return (
     <section id="zorggroepen" className="py-24 bg-slate-50 border-t border-slate-200 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Intro Header */}
+        {/* Intro Header — alleen op de homepage; /zorggroepen heeft zijn eigen h1 */}
+        {volledig && (
         <div className="text-center mb-20">
            <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-700 px-4 py-1.5 rounded-full text-sm font-bold mb-8 border border-purple-200 shadow-sm">
               <Network className="w-4 h-4" />
@@ -21,11 +33,12 @@ export const GroupSection: React.FC = () => {
               Het overzicht over alle locaties maken wij voor u: minder administratie op de vloer, cijfers voor u.
             </p>
         </div>
+        )}
 
         <div className="flex flex-col lg:flex-row items-start gap-16 mb-24">
 
           {/* Visual Side - Dashboard Preview (illustratief voorbeeld) */}
-          <div className="flex-1 w-full lg:sticky lg:top-24">
+          <div className={`flex-1 w-full lg:sticky lg:top-24 ${volledig ? '' : 'max-w-4xl mx-auto'}`}>
              <div className="bg-white rounded-[2.5rem] p-2 border border-slate-200 shadow-2xl shadow-purple-900/5 relative overflow-hidden transform rotate-1 hover:rotate-0 transition-transform duration-700">
                 <div className="bg-slate-50 rounded-[2rem] border border-slate-100 overflow-hidden p-6 md:p-8">
 
@@ -89,7 +102,8 @@ export const GroupSection: React.FC = () => {
              <p className="text-xs text-slate-400 mt-3 text-center">Illustratief dashboardvoorbeeld met fictieve locaties en bedragen.</p>
           </div>
 
-          {/* Text Side - The 3 Pillars */}
+          {/* Text Side - The 3 Pillars — alleen op de homepage */}
+          {volledig && (
           <div className="flex-1 pt-8">
             <h3 className="text-3xl font-bold text-slate-900 mb-10">Meer dan alleen inkoop</h3>
 
@@ -147,6 +161,7 @@ export const GroupSection: React.FC = () => {
                </a>
             </div>
           </div>
+          )}
         </div>
 
         {/* VS Section: Financial vs Operational */}
