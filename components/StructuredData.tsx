@@ -150,7 +150,7 @@ const faqSchema = {
       name: "Bestelt ZenTrack automatisch?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Nee — ZenTrack bestelt nooit zonder jouw akkoord. ZenTrack zet het bestelvoorstel kant-en-klaar en jij keurt goed met één JA via WhatsApp. Bij aangesloten webshops plaatsen we de bestelling daarna direct voor je; bij overige leveranciers ligt hij verzendklaar zodat je hem zelf met één klik verstuurt.",
+        text: "Nee. ZenTrack zet het bestelvoorstel kant-en-klaar met de juiste artikelnummers en aantallen uit je eigen historie, en jij keurt goed met één JA via WhatsApp. Bij leveranciers waar je ZenTrack aan koppelt kunnen wij de bestelling voor je klaarzetten tot aan je winkelmandje; jij geeft akkoord en jij houdt de knop. Het uitzoekwerk is gedaan, de beslissing blijft van jou.",
       },
     },
     {
@@ -166,7 +166,7 @@ const faqSchema = {
       name: "Hoe zit het met privacy (AVG)?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Jouw cijfers zijn van jou: andere praktijken zien nooit jouw facturen, prijzen of naam, en we verkopen niets door. ZenTrack wordt wel slimmer van geanonimiseerde patronen van alle gebruikers — nooit herleidbaar. De data staat op ISO 27001-gecertificeerde EU-infrastructuur (Frankfurt/Amsterdam), we verwerken geen patiëntgegevens en koppelen bewust niet met je HIS. Een verwerkersovereenkomst is op aanvraag beschikbaar.",
+        text: "Jouw cijfers zijn van jou: andere praktijken zien nooit jouw facturen, prijzen of naam, en we verkopen niets door. ZenTrack wordt wel slimmer van geanonimiseerde patronen van alle gebruikers — nooit herleidbaar. De data staat in Europese datacenters van ISO 27001-gecertificeerde providers. ZenTrack is niet bedoeld voor patiëntgegevens; er is bewust geen koppeling met je HIS. Voor de antwoorden van de assistent kan tekst buiten de EU worden verwerkt; de waarborgen daarvoor staan in onze privacyverklaring. Een verwerkersovereenkomst is op aanvraag beschikbaar.",
       },
     },
     {

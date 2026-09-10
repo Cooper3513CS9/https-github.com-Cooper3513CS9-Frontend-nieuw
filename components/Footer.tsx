@@ -123,7 +123,7 @@ export const Footer: React.FC<FooterProps> = ({ onLoginClick, onNavigate, ctaVar
 
         <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
           <p>© 2026 ZenTrack. Alle rechten voorbehouden.</p>
-          <p>Dataopslag binnen de EER op ISO 27001-gecertificeerde infrastructuur • Geen patiëntgegevens • Verwerkersovereenkomst beschikbaar</p>
+          <p>Dataopslag binnen de EER bij ISO 27001-gecertificeerde providers • Niet voor patiëntgegevens • Verwerkersovereenkomst beschikbaar</p>
         </div>
       </div>
     </footer>

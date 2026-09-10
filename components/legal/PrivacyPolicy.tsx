@@ -40,10 +40,10 @@ export const PrivacyPolicy: React.FC<Props> = ({ onBack }) => {
                 <section className="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
                     <h2 className="text-lg font-bold text-emerald-900 mb-3 flex items-center gap-2">
                         <Lock className="w-5 h-5" />
-                        Belangrijk: Geen Patiëntgegevens
+                        Belangrijk: niet voor patiëntgegevens
                     </h2>
                     <p className="text-emerald-800 text-sm leading-relaxed">
-                        ZenTrack is een systeem voor <strong>voorraadbeheer</strong>. Wij verwerken expliciet <strong>geen</strong> medische dossiers of patiëntgegevens. 
+                        ZenTrack is een systeem voor <strong>voorraadbeheer</strong> en is <strong>niet bedoeld</strong> voor medische dossiers of patiëntgegevens. Wij verwerken ze niet doelbewust.
                         Mocht u per abuis een document uploaden met patiëntinformatie, dan zal ons systeem dit waar mogelijk detecteren en direct verwijderen.
                     </p>
                 </section>
@@ -86,8 +86,9 @@ export const PrivacyPolicy: React.FC<Props> = ({ onBack }) => {
                         <li>
                             <strong>De assistent in het dashboard en in WhatsApp</strong> maakt gebruik van een taalmodel dat
                             via OpenRouter wordt uitgevoerd. Daarbij worden gegevens <strong>buiten de EER (Verenigde Staten)</strong>
-                            verwerkt. Wij sturen daar geen patiëntgegevens naartoe: berichten worden vooraf gefilterd op
-                            persoonsgegevens van patiënten, en u wordt gevraagd die niet in te voeren.
+                            verwerkt. Wij vragen u daar <strong>geen patiëntgegevens</strong> in te voeren; het systeem is er niet voor bedoeld.
+                            Waar mogelijk gebruiken wij de EU-gateway. Doorgifte naar de VS vindt plaats onder de EU-US Data Privacy
+                            Framework waarborgen en aanvullende SCC&apos;s (Standard Contractual Clauses).
                         </li>
                     </ul>
                 </section>

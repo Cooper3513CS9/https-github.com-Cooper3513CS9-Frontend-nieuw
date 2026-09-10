@@ -94,8 +94,8 @@ export default function InkoopCheckPage() {
                   <h3 className="font-bold text-slate-900 mb-3">Jouw cijfers zijn van jou</h3>
                   <ul className="space-y-2 text-sm text-slate-600">
                     <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" /> Andere praktijken zien nooit jouw facturen, prijzen of naam, en we verkopen niets door</li>
-                    <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" /> Geen patiëntgegevens, bewust geen koppeling met je HIS</li>
-                    <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" /> Data op ISO 27001-gecertificeerde EU-infrastructuur; export of verwijderen kan altijd</li>
+                    <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" /> Niet voor patiëntgegevens, bewust geen koppeling met je HIS</li>
+                    <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" /> Data op Europese datacenters van ISO 27001-gecertificeerde providers; export of verwijderen kan altijd</li>
                     <li className="flex items-start gap-2"><Check className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" /> Verwerkersovereenkomst op aanvraag via <a href="mailto:info@zentrack.nl" className="text-emerald-600 underline">info@zentrack.nl</a></li>
                   </ul>
                 </div>

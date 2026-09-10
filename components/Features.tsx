@@ -192,7 +192,7 @@ export const Features: React.FC = () => {
                 <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></div>
               </div>
               <h4 className="font-bold text-slate-900">Bestellen wordt JA appen</h4>
-              <p className="text-sm text-slate-500 mt-1">ZenTrack voorspelt wanneer bijbestellen nodig is en zet een voorstel voor je klaar. Jij keurt goed met één JA via WhatsApp. Er gaat nooit iets de deur uit zonder jouw akkoord.</p>
+              <p className="text-sm text-slate-500 mt-1">ZenTrack leert uit je bestelhistorie hoe vaak en hoeveel je koopt — bij sommige producten al uit meer dan twintig bestellingen — en stelt daar je minimum bij voor. Zakt de stand eronder, dan ligt het voorstel klaar met de juiste artikelnummers en aantallen. Jij keurt goed met één JA. Hoe meer facturen, hoe beter het voorstel.</p>
             </div>
           </div>
 

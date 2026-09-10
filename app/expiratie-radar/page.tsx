@@ -202,7 +202,7 @@ export default function ExpiratieRadarPage() {
 
                 <div className="mt-10 flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-slate-500 font-medium">
                   <span className="flex items-center gap-2"><Smartphone className="w-4 h-4" /> Via WhatsApp</span>
-                  <span className="flex items-center gap-2"><Shield className="w-4 h-4" /> Geen patiëntgegevens</span>
+                  <span className="flex items-center gap-2"><Shield className="w-4 h-4" /> Niet voor patiëntgegevens</span>
                   <span className="flex items-center gap-2"><Clock className="w-4 h-4" /> 5 min setup</span>
                 </div>
               </div>
@@ -391,7 +391,7 @@ export default function ExpiratieRadarPage() {
             <div className="mt-10 flex flex-wrap justify-center gap-8 text-sm text-slate-500 font-medium">
               <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-500" /> Alerts 30/14/7 dagen vooraf</span>
               <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-500" /> Via WhatsApp</span>
-              <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-500" /> EU-servers (Frankfurt/Amsterdam)</span>
+              <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-500" /> Europese datacenters</span>
             </div>
           </div>
         </section>

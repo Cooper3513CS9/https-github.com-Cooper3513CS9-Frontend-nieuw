@@ -170,7 +170,7 @@ export const Pricing: React.FC<PricingProps> = ({ onRegisterClick }) => {
         <div className="mt-20 pt-10 border-t border-slate-800 flex flex-wrap justify-center gap-8 md:gap-16 text-slate-500 text-sm font-medium">
           <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-500" /> Eerst bewijs, dan betalen</span>
           <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-500" /> Geen setup-kosten</span>
-          <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-500" /> Data op EU-servers (Frankfurt/Amsterdam)</span>
+          <span className="flex items-center gap-2"><Check className="w-4 h-4 text-emerald-500" /> Data op Europese datacenters</span>
         </div>
 
       </div>

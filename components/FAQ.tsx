@@ -17,7 +17,7 @@ export const FAQ: React.FC = () => {
     },
     {
       question: "Hoe zit het met privacy (AVG)?",
-      answer: "Veiligheid staat voorop. Onze data staat in EU-datacenters (Frankfurt/Amsterdam) die ISO 27001-gecertificeerd zijn, en we verwerken géén patiëntgegevens. Je houdt zelf de regie: ZenTrack bestelt nooit zonder jouw akkoord."
+      answer: "Je gegevens staan in Europese datacenters van ISO 27001-gecertificeerde providers. Voor de antwoorden van de assistent kan tekst buiten de EU worden verwerkt; de waarborgen daarvoor staan in onze privacyverklaring. Vul daar geen patiëntgegevens in: ZenTrack is er niet voor bedoeld."
     },
     {
       question: "Wat als ik er niet uitkom?",

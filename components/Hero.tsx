@@ -217,7 +217,7 @@ export const Hero: React.FC<HeroProps> = ({ onCtaClick }) => {
 
             <div className="mt-10 flex items-center justify-center md:justify-start gap-6 text-sm text-slate-500 font-medium">
                <span className="flex items-center gap-2"><Smartphone className="w-4 h-4" /> Geen app installeren</span>
-               <span className="flex items-center gap-2"><ShieldCheck className="w-4 h-4" /> Data op EU Servers</span>
+               <span className="flex items-center gap-2"><ShieldCheck className="w-4 h-4" /> Data in Europese datacenters</span>
             </div>
           </div>
 

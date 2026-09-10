@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacybeleid',
-  description: 'Privacybeleid van ZenTrack. Hoe wij omgaan met uw gegevens, welke data we verwerken en uw rechten onder de AVG. ZenTrack verwerkt geen patientgegevens.',
+  description: 'Privacybeleid van ZenTrack. Hoe wij omgaan met uw gegevens, welke data we verwerken en uw rechten onder de AVG. ZenTrack is niet bedoeld voor patientgegevens.',
   robots: {
     index: true,
     follow: true,

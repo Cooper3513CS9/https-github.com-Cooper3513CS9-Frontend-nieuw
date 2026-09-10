@@ -196,7 +196,7 @@ export default function FactuurScannerPage() {
 
                 <div className="mt-10 flex flex-wrap items-center justify-center md:justify-start gap-6 text-sm text-slate-500 font-medium">
                   <span className="flex items-center gap-2"><Zap className="w-4 h-4" /> Snel verwerkt</span>
-                  <span className="flex items-center gap-2"><Shield className="w-4 h-4" /> Geen patiëntdata</span>
+                  <span className="flex items-center gap-2"><Shield className="w-4 h-4" /> Niet voor patiëntdata</span>
                   <span className="flex items-center gap-2"><Smartphone className="w-4 h-4" /> Via WhatsApp</span>
                 </div>
               </div>
