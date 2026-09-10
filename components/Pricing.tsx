@@ -78,14 +78,15 @@ export const Pricing: React.FC<PricingProps> = ({ onRegisterClick }) => {
               Begin met de gratis check
             </button>
             <div className="space-y-3 flex-1">
-              <FeatureItem text="Bestelvoorstellen staan klaar en goedkeuren is JA appen; bij aangesloten webshops plaatsen wij direct, anders ligt hij verzendklaar" highlighted light />
+              <FeatureItem text="Het bestelvoorstel staat klaar — met de juiste artikelnummers en aantallen uit je eigen historie. Goedkeuren is JA appen; plaatsen doe je zelf, in een paar klikken. Het uitzoekwerk is al gedaan." highlighted light />
               <FeatureItem text="Doorlopende prijsbewaking: zie precies wáár je die besparing pakt" light />
               <FeatureItem text="Vervaldatum-alerts via WhatsApp: 30, 14 en 7 dagen vooraf én op de dag zelf, mét kastlocatie" light />
               <FeatureItem text="Pakbon-foto → levering automatisch gecheckt" light />
               <FeatureItem text="Binnenkomende voorraad automatisch verwerkt via facturen en pakbonnen" light />
               <FeatureItem text="Alles vastgelegd: wie keurde wat goed, alle facturen doorzoekbaar" light />
               <FeatureItem text="Datums & documenten voor je visitatie-map, met bewijsrapport" light />
-              <FeatureItem text="Emma in dashboard én WhatsApp (jij bepaalt wie), en ze onthoudt jullie afspraken" light />
+              <FeatureItem text="Emma in dashboard én WhatsApp (jij bepaalt wie)" light />
+              <FeatureItem text="Vertel Emma hoe het bij jullie werkt — leveringsafspraken, protocollen, wie wat doet. Ze onthoudt het, gebruikt het in haar antwoorden, en je kunt het altijd bijwerken of weghalen. Patiëntgegevens weigert ze." light />
               <FeatureItem text="Team onbeperkt, ieder een eigen rol" light />
             </div>
           </div>
