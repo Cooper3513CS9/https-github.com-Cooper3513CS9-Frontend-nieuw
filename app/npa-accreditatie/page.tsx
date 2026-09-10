@@ -57,7 +57,7 @@ export default function NpaAccreditatiePage() {
                   <p className="flex items-center gap-1.5"><Check className="w-3 h-3 text-emerald-500 shrink-0" /> <span>Audit trail beschikbaar</span></p>
                 </div>
                 <div className="mt-2 bg-emerald-50 p-1.5 rounded border border-emerald-100 text-[10px] text-emerald-700 font-bold">
-                  4 domeinen actief — dossier up-to-date ✓
+                  2 van 5 onderdelen gevuld
                 </div>
               </div>
             </div>
@@ -110,7 +110,7 @@ export default function NpaAccreditatiePage() {
                   <p className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-orange-500 shrink-0"></span> <span>Jaarlijkse sterilisatie controle (maart)</span></p>
                 </div>
                 <div className="mt-2 bg-emerald-50 p-1.5 rounded border border-emerald-100 text-[10px] text-emerald-700">
-                  <span className="font-bold">4 NPA domeinen</span> gedekt. 2 aandachtspunten.
+                  <span className="font-bold">2 van 5 onderdelen</span> gevuld. 2 aandachtspunten.
                 </div>
               </div>
             </div>
@@ -265,7 +265,7 @@ export default function NpaAccreditatiePage() {
                 {
                   step: '1',
                   title: 'Gebruik ZenTrack normaal',
-                  desc: 'Scan facturen, check pakbonnen, beheer voorraad. De documentatie wordt automatisch aangemaakt.',
+                  desc: 'Scan facturen, check pakbonnen, tel je voorraad. Elke handeling krijgt een datum en een tijdstempel.',
                   icon: BookOpen,
                   color: 'bg-emerald-500',
                 },
@@ -278,8 +278,8 @@ export default function NpaAccreditatiePage() {
                 },
                 {
                   step: '3',
-                  title: 'Dossier groeit automatisch',
-                  desc: 'Elke factuur, expiratie-check en levering voedt uw NPA-dossier. Geen extra werk — het gebeurt terwijl u werkt.',
+                  title: 'Bewijs ligt klaar',
+                  desc: 'Elke factuur en vervaldatum-check levert een bewijsstuk. ZenTrack legt ze vast; jij bepaalt wat er in je dossier gaat.',
                   icon: FileCheck,
                   color: 'bg-emerald-500',
                 },
@@ -302,17 +302,17 @@ export default function NpaAccreditatiePage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Wat wordt automatisch vastgelegd
+                Wat ZenTrack voor je vastlegt
               </h2>
-              <p className="text-lg text-slate-600">De administratieve basis voor uw NPA-visitatie — zonder extra werk.</p>
+              <p className="text-lg text-slate-600">De administratieve basis voor je NPA-visitatie — vastgelegd terwijl je werkt.</p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {[
-                { label: 'Voorraadregistratie', desc: 'Compleet logboek', icon: '📋', bg: 'bg-emerald-50', border: 'border-emerald-200' },
+                { label: 'Voorraadregistratie', desc: 'Logboek per product', icon: '📋', bg: 'bg-emerald-50', border: 'border-emerald-200' },
                 { label: 'Expiratie Controle', desc: 'Alle checks vastgelegd', icon: '📅', bg: 'bg-orange-50', border: 'border-orange-200' },
                 { label: 'Leverancierbeheer', desc: 'Inkoop-logboek', icon: '🏢', bg: 'bg-emerald-50', border: 'border-emerald-200' },
-                { label: 'Spoedmedicatie', desc: 'Controle logboek', icon: '🚨', bg: 'bg-red-50', border: 'border-red-200' },
+                { label: 'Keuringen & certificaten', desc: 'Zelf toevoegen', icon: '🗂️', bg: 'bg-red-50', border: 'border-red-200' },
               ].map((item, i) => (
                 <div key={i} className={`${item.bg} rounded-2xl p-5 border ${item.border} text-center`}>
                   <div className="text-2xl mb-3">{item.icon}</div>
@@ -339,7 +339,7 @@ export default function NpaAccreditatiePage() {
                   <div className="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center">
                     <X className="w-5 h-5 text-red-500" />
                   </div>
-                  <h3 className="text-lg font-bold text-slate-900">Zonder NPA Module</h3>
+                  <h3 className="text-lg font-bold text-slate-900">Zonder ZenTrack</h3>
                 </div>
                 <div className="space-y-3">
                   <FeatureX text="Weken paniek voor elke visitatie" />
@@ -359,11 +359,11 @@ export default function NpaAccreditatiePage() {
                   <h3 className="text-lg font-bold text-slate-900">Met ZenTrack</h3>
                 </div>
                 <div className="space-y-3">
-                  <FeatureCheck text="Audit-dossier bouwt zich automatisch op" highlighted />
-                  <FeatureCheck text="Automatische documentatie uit dagelijks gebruik" />
+                  <FeatureCheck text="Bewijsstukken verzameld terwijl je werkt" highlighted />
+                  <FeatureCheck text="Vastgelegd met datum, aantal en tijdstempel" />
                   <FeatureCheck text="Doorzoekbaar logboek met tijdstempels" />
-                  <FeatureCheck text="NPA documentatie altijd actueel" />
-                  <FeatureCheck text="Proactieve herinneringen voor controles" />
+                  <FeatureCheck text="Rapport uitdraaien wanneer je het nodig hebt" />
+                  <FeatureCheck text="Appje vóór een vervaldatum verstrijkt" />
                 </div>
               </div>
             </div>
@@ -375,14 +375,14 @@ export default function NpaAccreditatiePage() {
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <div className="inline-flex items-center gap-2 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 px-4 py-1.5 rounded-full text-sm font-bold mb-6">
               <ShieldCheck className="w-4 h-4" />
-              <span>Uw administratie op orde</span>
+              <span>Je administratie op orde</span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Nooit meer paniek<br />
               <span className="text-emerald-400">voor de NPA visitatie.</span>
             </h2>
             <p className="text-lg text-slate-400 mb-8 max-w-xl mx-auto">
-              Gebruik ZenTrack voor je dagelijkse voorraadbeheer. Relevante registraties worden automatisch verzameld voor je kwaliteitsdossier.
+              Gebruik ZenTrack voor je dagelijkse voorraadbeheer. ZenTrack helpt je die registraties vast te leggen, klaar voor je kwaliteitsdossier.
             </p>
             <div className="flex flex-col sm:flex-row items-center gap-4 justify-center">
               <button

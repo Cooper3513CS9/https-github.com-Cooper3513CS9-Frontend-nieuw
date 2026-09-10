@@ -45,7 +45,7 @@ export const DashboardHome: React.FC<DashboardHomeProps> = ({ user, onNavigate, 
                     <h2 className="text-2xl font-bold mb-2">Maandelijkse Aanvulling</h2>
                     <p className="text-slate-300 text-sm mb-4 max-w-xl">
                         Op basis van je verbruikspatroon (gem. 21 dagen) adviseer ik om nu te bestellen. 
-                        Leverancier <span className="text-white font-semibold">Groothandel Noord</span> is momenteel het goedkoopst voor deze combinatie.
+                        Op basis van je eigen facturen is hier een besparing mogelijk.
                     </p>
                     <div className="flex items-center gap-4 text-sm">
                         <div className="bg-slate-800/50 px-3 py-2 rounded-lg border border-slate-700">

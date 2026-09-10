@@ -14,7 +14,7 @@ export const SuppliersView: React.FC<Props> = ({ onBack }) => {
     {
       id: '1',
       name: 'Medische Groothandel B.V. Medical',
-      email: 'bestellingen@henryschein.nl',
+      email: 'bestellingen@voorbeeld.nl',
       phone: '036-5358901',
       lead_time_days: 2,
       min_order_value: 50,
@@ -24,7 +24,7 @@ export const SuppliersView: React.FC<Props> = ({ onBack }) => {
     {
       id: '2',
       name: 'Groothandel Noord Netherlands',
-      email: 'orders-nl@medline.com',
+      email: 'orders@voorbeeld.nl',
       phone: '026-3123456',
       lead_time_days: 3,
       min_order_value: 150,
@@ -34,7 +34,7 @@ export const SuppliersView: React.FC<Props> = ({ onBack }) => {
     {
       id: '3',
       name: 'Prolepha Medisch',
-      email: 'verkoop@prolepha.nl',
+      email: 'verkoop@voorbeeld.nl',
       phone: '076-1234567',
       lead_time_days: 1,
       min_order_value: 0,
@@ -44,7 +44,7 @@ export const SuppliersView: React.FC<Props> = ({ onBack }) => {
     {
       id: '4',
       name: 'Holland Pharma',
-      email: 'info@hollandpharma.nl',
+      email: 'info@voorbeeld.nl',
       phone: '0548-123456',
       lead_time_days: 1,
       min_order_value: 25,

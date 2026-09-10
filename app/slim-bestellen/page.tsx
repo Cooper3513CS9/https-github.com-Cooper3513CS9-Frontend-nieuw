@@ -358,8 +358,8 @@ export default function SlimBestellenPage() {
                 </div>
                 <div className="space-y-3">
                   <FeatureCheck text="Prijsinzicht: zie of je een marktconforme prijs betaalt" highlighted />
-                  <FeatureCheck text="Automatische bestelherinneringen op basis van verbruik" />
-                  <FeatureCheck text="Direct melding bij lage voorraad of naderende vervaldatums" />
+                  <FeatureCheck text="Melding zodra een product onder het minimum komt dat jij hebt ingesteld" />
+                  <FeatureCheck text="Appje vóór een vervaldatum verstrijkt" />
                   <FeatureCheck text="Prijstrends en concrete bespaarkansen" />
                   <FeatureCheck text="Kwartaaloverzicht: besparing + tijdwinst" />
                 </div>

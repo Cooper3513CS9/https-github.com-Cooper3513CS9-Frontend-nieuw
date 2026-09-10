@@ -6,7 +6,7 @@ ZenTrack is een Nederlands SaaS-platform voor huisartsenpraktijken. Het team hou
 
 ## Kernfeatures
 
-- **Gratis inkoop-check**: upload je facturen en zie waar je te veel betaalt en hoeveel — begin met 1 factuur, met 12 maanden facturen wordt het een volwaardig besparingsrapport
+- **Gratis inkoop-check**: upload je facturen en zie waar je te veel betaalt, hoeveel je kunt besparen en op welke producten — begin met 1 factuur, met 12 maanden facturen wordt het een volwaardig besparingsrapport
 - **Factuurscanner**: foto of PDF van een factuur, AI (OCR) leest automatisch alle producten, hoeveelheden en prijzen uit
 - **Bestelvoorstellen**: ZenTrack zet de bestelling kant-en-klaar op basis van verbruik; goedkeuren is één JA via WhatsApp — bij aangesloten webshops plaatst ZenTrack direct, anders ligt hij verzendklaar
 - **Prijsbewaking** (abonnement): doorlopende bewaking van je inkoopprijzen; je ziet precies wáár je die besparing pakt
@@ -14,7 +14,7 @@ ZenTrack is een Nederlands SaaS-platform voor huisartsenpraktijken. Het team hou
 - **Vervaldatum-bewaking**: foto van de verpakking → automatische WhatsApp-waarschuwing 30, 14 en 7 dagen vooraf én op de dag zelf, met kastlocatie
 - **Pakbon-controle**: foto van de pakbon → levering automatisch gecheckt tegen de bestelling
 - **Alles vastgelegd**: elke goedkeuring met wie-wat-wanneer, alle facturen op één doorzoekbare plek
-- **Visitatie-voorbereiding**: het datums-en-documenten-deel (keuringen, certificaten, vervaldatums) met bewijsrapport voor de visitatie-map
+- **Visitatie-voorbereiding** (bèta; rapport bij abonnement): het datums-en-documenten-deel (keuringen, certificaten, vervaldatums) met bewijsrapport voor de visitatie-map
 - **Chat met je eigen cijfers**: vragen in gewone taal, in dashboard én WhatsApp; Emma onthoudt praktijk-afspraken
 
 ## Doelgroep
@@ -54,7 +54,7 @@ Nederlandse huisartsenpraktijken, gezondheidscentra en zorggroepen die tijd will
 - [Voorraadbeheer](https://www.zentrack.nl/voorraad-beheer)
 - [Factuur Scanner](https://www.zentrack.nl/factuur-scanner)
 - [Slim Bestellen](https://www.zentrack.nl/slim-bestellen)
-- [NPA Accreditatie](https://www.zentrack.nl/npa-accreditatie)
+- [Visitatie & kwaliteitsdossier](https://www.zentrack.nl/npa-accreditatie)
 - [Expiratie Radar](https://www.zentrack.nl/expiratie-radar)
 - [Pakbon Verificatie](https://www.zentrack.nl/pakbon-verificatie)
 - [Privacy](https://www.zentrack.nl/legal/privacy)

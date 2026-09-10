@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     default: "ZenTrack | Slim Voorraadbeheer voor Huisartspraktijken",
     template: "%s | ZenTrack",
   },
-  description: "Automatisch voorraadbeheer via WhatsApp voor huisartspraktijken. AI-factuurscanner, expiratie-alerts, NPA-accreditatie documentatie en slimmer bestellen. Start met een gratis inkoop-check.",
+  description: "Automatisch voorraadbeheer via WhatsApp voor huisartspraktijken. AI-factuurscanner, expiratie-alerts, bewijsstukken voor je visitatie en slimmer bestellen. Start met een gratis inkoop-check.",
   metadataBase: new URL('https://www.zentrack.nl'),
   icons: {
     icon: [
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: 'https://www.zentrack.nl',
     siteName: 'ZenTrack',
     title: 'ZenTrack | Slim Voorraadbeheer voor Huisartspraktijken',
-    description: 'Automatisch voorraadbeheer via WhatsApp. AI-factuurscanner, expiratie-alerts en NPA-documentatie voor huisartspraktijken.',
+    description: 'Automatisch voorraadbeheer via WhatsApp. AI-factuurscanner, expiratie-alerts en bewijsstukken voor je visitatie, voor huisartspraktijken.',
     images: [
       {
         url: '/zentrack-logo-dark.png',
