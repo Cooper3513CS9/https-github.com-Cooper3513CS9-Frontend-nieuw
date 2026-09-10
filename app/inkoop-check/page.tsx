@@ -23,6 +23,17 @@ export default function InkoopCheckPage() {
               <FileSearch className="w-4 h-4" />
               <span>Gratis, zonder creditcard of verplichting</span>
             </div>
+            {/*
+              BEVROREN COPY — NIET HERSCHRIJVEN ZONDER RONALD.
+              Deze pagina is op 31 aug bewust zo geformuleerd en op 2 sept goedgekeurd;
+              op 10 sept opnieuw bevestigd toen een contra-ronde 'lagere prijzen',
+              'leveranciers' en 'de vergelijking gebruikt lijstprijzen' als spanning met
+              het stealth-principe markeerde. Besluit Ronald: zo houden.
+              Reden: de naam 'inkoop-check' belooft een CHECK, geen prijsvergelijking, en
+              de uitleg hoort te zeggen wat de praktijk krijgt. Wat NIET mag terugkeren is
+              het aanwijzen van een leverancier bij naam als goedkoopste — zie het blok
+              'Stealth-principe richting leveranciers' in de CLAUDE.md van het dashboard.
+            */}
             <h1 className="text-4xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight tracking-tight">
               Waar zitten jouw<br />
               <span className="text-emerald-600">inkoopkansen?</span>
