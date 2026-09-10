@@ -104,11 +104,12 @@ export default function ZorggroepenPage() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                Op de locatie verandert uw manier van werken niet
+                Wij sluiten aan bij hoe elke locatie nu werkt
               </h2>
               <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                Veel locaties hebben helemaal geen systeem, andere werken met kaartjes of stickers van een
-                leverancier. Alle drie de situaties kunnen.
+                Niet elke locatie werkt op dezelfde manier. De één houdt het bij op papier, de ander heeft
+                kaartjes of stickers van een leverancier. Wij sluiten aan bij wat er ligt, en is er nog geen
+                vaste werkwijze, dan brengen we er een mee die op de vloer werkt.
               </p>
             </div>
 
@@ -116,7 +117,7 @@ export default function ZorggroepenPage() {
               {[
                 {
                   icon: Camera,
-                  titel: 'Werkt u nu met niets',
+                  titel: 'Nog geen vaste werkwijze',
                   tekst: 'Dan begint u met foto’s: een pakbon, een doosje met een vervaldatum, een kastplek met een aantal erbij. Er is niets te installeren en niets in te richten.',
                 },
                 {
