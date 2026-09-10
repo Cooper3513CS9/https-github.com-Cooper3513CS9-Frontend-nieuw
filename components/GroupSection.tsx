@@ -17,8 +17,8 @@ export const GroupSection: React.FC = () => {
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
               <strong className="text-slate-900">Geef uw locaties rust, krijg zelf de regie.</strong><br/>
-              Eén plek waar de facturen en voorraadzorgen van al uw locaties samenkomen —
-              minder administratie voor uw teams, overzicht voor u.
+              Elke locatie werkt zelfstandig, met eigen voorraad en eigen facturen.
+              Het overzicht over alle locaties maken wij voor u: minder administratie op de vloer, cijfers voor u.
             </p>
         </div>
 
@@ -35,7 +35,7 @@ export const GroupSection: React.FC = () => {
                          <h3 className="font-bold text-slate-900 text-lg flex items-center gap-2">
                             <Building2 className="w-5 h-5 text-purple-600" /> Regio Midden-Noord
                          </h3>
-                         <p className="text-xs text-slate-500 font-medium pl-7">Totaaloverzicht</p>
+                         <p className="text-xs text-slate-500 font-medium pl-7">Uitgaven per locatie</p>
                       </div>
                       <div className="flex items-center gap-2">
                          <div className="px-2.5 py-1 bg-amber-50 border border-amber-200 text-amber-700 text-[10px] font-bold rounded-full">
@@ -102,7 +102,7 @@ export const GroupSection: React.FC = () => {
                     <div>
                     <h4 className="font-bold text-slate-900 text-xl mb-2">1. Rust op elke locatie</h4>
                     <p className="text-slate-600 leading-relaxed">
-                        De juiste materialen op voorraad, vervaldatums bewaakt en bestellen met één JA via WhatsApp — per locatie, zonder extra administratie.
+                        De juiste materialen op voorraad, vervaldatums bewaakt en een bestelvoorstel dat u met één JA goedkeurt. Per locatie, zonder extra administratie. Bij aangesloten webshops zetten wij de bestelling tot aan uw winkelmandje klaar.
                     </p>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ export const GroupSection: React.FC = () => {
                     <div>
                     <h4 className="font-bold text-slate-900 text-xl mb-2">2. Harde cijfers voor betere afspraken</h4>
                     <p className="text-slate-600 leading-relaxed">
-                        Alle facturen van alle locaties op één plek. U ziet per locatie én in totaal wat er wordt uitgegeven — de basis voor betere contractafspraken.
+                        Elke locatie leest haar eigen facturen in. Wij leggen ze naast elkaar en laten zien óf en waar hetzelfde product een andere prijs heeft. Dat is de basis voor betere contractafspraken.
                     </p>
                     </div>
                 </div>
@@ -159,7 +159,7 @@ export const GroupSection: React.FC = () => {
                 </div>
                 <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">De ontbrekende schakel</h3>
                 <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                    Uw financiële software (ERP) kijkt terug en telt euro's. ZenTrack kijkt vooruit en beheert de fysieke werkelijkheid. <strong>Samen vormen ze een compleet beeld.</strong>
+                    Uw financiële software (AFAS, Exact) kijkt terug en telt euro's. ZenTrack kijkt vooruit en beheert de fysieke werkelijkheid. <strong>Samen vormen ze een compleet beeld.</strong>
                 </p>
             </div>
 
@@ -184,7 +184,7 @@ export const GroupSection: React.FC = () => {
 
                         <div className="p-4 bg-slate-100 rounded-xl border border-slate-200 border-dashed">
                             <p className="text-slate-500 text-sm italic flex flex-col gap-2">
-                                <span className="flex items-center gap-2"><AlertCircle className="w-4 h-4" /> "We hebben veel uitgegeven, maar waaraan?"</span>
+                                <span className="flex items-center gap-2"><AlertCircle className="w-4 h-4" /> "Maar aan welke producten, en tegen welke prijs?"</span>
                                 <span className="flex items-center gap-2"><AlertCircle className="w-4 h-4" /> "Ligt dit nog in de kast of is het verbruikt?"</span>
                             </p>
                         </div>
@@ -213,7 +213,7 @@ export const GroupSection: React.FC = () => {
                         <div className="bg-white p-4 rounded-xl border border-purple-100 shadow-sm flex justify-between items-center">
                             <div>
                                 <p className="text-xs font-bold text-purple-400 uppercase mb-1">Uitgaven</p>
-                                <p className="font-bold text-slate-900">Per locatie én in totaal</p>
+                                <p className="font-bold text-slate-900">Per locatie, naast elkaar gelegd</p>
                             </div>
                             <LineChart className="w-5 h-5 text-emerald-500" />
                         </div>
