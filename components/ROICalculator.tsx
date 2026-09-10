@@ -127,7 +127,15 @@ export const ROICalculator: React.FC = () => {
                 {/* Slider 2: Hours */}
                 <div>
                    <div className="flex justify-between mb-2 items-end">
-                      <label className="text-sm font-bold text-slate-700">Uren beheer / week</label>
+                      <label className="text-sm font-bold text-slate-700 flex items-center gap-2">
+                         Uren beheer / week
+                         <div className="group relative">
+                            <AlertCircle className="w-3 h-3 text-slate-400 cursor-help" />
+                            <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 w-48 bg-slate-800 text-white text-[10px] p-2 rounded hidden group-hover:block">
+                               We rekenen met 70% — je bespaart niet álle beheertijd
+                            </div>
+                         </div>
+                      </label>
                       <span className="font-mono font-bold text-slate-900 bg-white px-2 py-1 rounded border border-slate-200">{hoursPerWeek}u</span>
                    </div>
                    <input 
