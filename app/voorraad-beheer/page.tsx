@@ -263,8 +263,8 @@ export default function VoorraadBeheerPage() {
               {[
                 {
                   step: '1',
-                  title: 'Producten toevoegen',
-                  desc: 'Scan een barcode, upload een factuur of voeg handmatig toe. Koppel aan kast, kamer of locatie.',
+                  title: 'Werkt met je kaartjes op de plank',
+                  desc: 'Heb je al kaartjes of stickers op de plankrand? ZenTrack print ze voor je, gemaakt uit je eigen facturen — je hoeft je werkwijze niet te veranderen. Plakken, en tellen doe je met een foto van het etiket via WhatsApp, met het aantal erbij.',
                   icon: QrCode,
                   color: 'bg-emerald-500',
                 },
@@ -278,7 +278,7 @@ export default function VoorraadBeheerPage() {
                 {
                   step: '3',
                   title: 'Alerts bij lage voorraad',
-                  desc: 'Krijg een WhatsApp melding als iets onder het minimum komt. Met bestelsuggestie voor de beste prijs.',
+                  desc: 'Krijg een WhatsApp-melding als iets onder het minimum komt. Jij bepaalt per product wanneer je gewaarschuwd wilt worden — ZenTrack verzint geen drempels.',
                   icon: MessageCircle,
                   color: 'bg-emerald-500',
                 },
@@ -358,10 +358,10 @@ export default function VoorraadBeheerPage() {
                   <h3 className="text-lg font-bold text-slate-900">Met Voorraad Beheer</h3>
                 </div>
                 <div className="space-y-3">
-                  <FeatureCheck text="Real-time voorraad per kast en locatie" highlighted />
+                  <FeatureCheck text="Voorraad per kast en kamer, bijgewerkt zonder nieuw systeem te leren" highlighted />
                   <FeatureCheck text="WhatsApp alert bij lage voorraad" />
                   <FeatureCheck text="Automatisch bijgewerkt via facturen" />
-                  <FeatureCheck text="Verbruikspatronen en trends" />
+                  <FeatureCheck text="Voorstel voor je minimum uit je eigen bestelhistorie — jij zegt ja of nee" />
                   <FeatureCheck text="Bestellen op basis van data, niet angst" />
                 </div>
               </div>

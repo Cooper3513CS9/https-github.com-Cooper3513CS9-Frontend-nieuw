@@ -267,7 +267,7 @@ export default function PakbonVerificatiePage() {
                 {
                   step: '2',
                   title: 'Automatische vergelijking',
-                  desc: 'ZenTrack vergelijkt de pakbon met je factuur en bestelling. Aantallen, producten, artikelnummers.',
+                  desc: 'ZenTrack vergelijkt de pakbon met je bestelling. Aantallen, producten, artikelnummers.',
                   icon: PackageSearch,
                   color: 'bg-emerald-500',
                 },
@@ -329,7 +329,7 @@ export default function PakbonVerificatiePage() {
                 <div className="space-y-3">
                   <FeatureCheck text="Controle in 30 seconden via WhatsApp foto" highlighted />
                   <FeatureCheck text="Directe melding bij ontbrekende artikelen" />
-                  <FeatureCheck text="Automatische factuur-pakbon vergelijking" />
+                  <FeatureCheck text="Automatische bestelling-pakbon vergelijking" />
                   <FeatureCheck text="Onderbouwing als je een factuur betwist" />
                   <FeatureCheck text="Complete leveringshistorie als bewijs" />
                 </div>
