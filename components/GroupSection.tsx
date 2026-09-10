@@ -3,8 +3,8 @@ import { Building2, ArrowRight, Network, FileSpreadsheet, AlertCircle, ShieldChe
 
 type GroupSectionProps = {
   /**
-   * 'full' = homepage: eigen kop, dashboardvoorbeeld, drie pijlers, AFAS-vergelijking.
-   * 'bewijs' = /zorggroepen: alleen het dashboardvoorbeeld en de AFAS-vergelijking.
+   * 'full' = homepage: eigen kop, dashboardvoorbeeld, drie pijlers, de vergelijking met financiële software.
+   * 'bewijs' = /zorggroepen: alleen het dashboardvoorbeeld en de vergelijking met financiële software.
    * Die pagina heeft zijn eigen h1 en zijn eigen vier punten; kop en pijlers zouden
    * dat dubbel zeggen.
    */
@@ -174,7 +174,7 @@ export const GroupSection: React.FC<GroupSectionProps> = ({ variant = 'full' }) 
                 </div>
                 <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-6">De ontbrekende schakel</h3>
                 <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                    Uw financiële software (AFAS, Exact) kijkt terug en telt euro's. ZenTrack kijkt vooruit en beheert de fysieke werkelijkheid. <strong>Samen vormen ze een compleet beeld.</strong>
+                    Uw financiële software kijkt terug en telt euro's. ZenTrack kijkt vooruit en beheert de fysieke werkelijkheid. <strong>Samen vormen ze een compleet beeld.</strong>
                 </p>
             </div>
 
