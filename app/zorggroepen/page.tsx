@@ -147,13 +147,22 @@ export default function ZorggroepenPage() {
               </div>
               <div>
                 <h3 className="text-base font-bold text-slate-900 mb-2">
-                  Afspraken blijven op de locatie, ook als iemand weggaat
+                  De afspraken van een locatie blijven bij die locatie
                 </h3>
                 <p className="text-slate-600 leading-relaxed text-[15px]">
-                  Per locatie legt u vast wat voor die plek geldt: levertijden, wie bestelt, welke merken wel en
-                  niet, afspraken met een leverancier. Een waarnemer of nieuwe medewerker vraagt het op in de chat
-                  in plaats van het rond te moeten vragen, en vragen over hoe iets werkt kunnen daar ook. Zo
-                  belandt niet iedere keer dezelfde vraag bij u of bij de praktijkmanager.
+                  Iemand vertelt het één keer in de chat: wij bestellen handschoenen altijd per tien dozen, een
+                  klacht bij deze leverancier melden we binnen veertien dagen, de kast wordt op vrijdag geteld.
+                  Emma onthoudt dat voor die locatie.
+                </p>
+                <p className="text-slate-600 leading-relaxed text-[15px] mt-3">
+                  Daarna vraagt iedereen het gewoon. Een waarnemer die niet weet wie er bestelt, een nieuwe
+                  assistente die vraagt hoe de vervaldatumcontrole gaat: zij krijgen het antwoord dat de praktijk
+                  zelf heeft opgeschreven. Niet rondbellen, en niet iedere keer dezelfde vraag bij de
+                  praktijkmanager.
+                </p>
+                <p className="text-slate-600 leading-relaxed text-[15px] mt-3">
+                  Wat over leveranciers bekend is, levertijden en hoe een klacht wordt ingediend, vult ZenTrack
+                  zelf aan. Patiëntgegevens gaan er niet in: namen, geboortedata en diagnoses worden geweigerd.
                 </p>
               </div>
             </div>
