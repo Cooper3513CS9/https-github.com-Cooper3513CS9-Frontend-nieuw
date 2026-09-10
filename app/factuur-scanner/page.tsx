@@ -267,8 +267,8 @@ export default function FactuurScannerPage() {
               {[
                 {
                   step: '1',
-                  title: 'Factuur uploaden',
-                  desc: 'Sleep de PDF in je dashboard — of maak een foto van een papieren factuur en upload die. Zelfs scheef gefotografeerde facturen worden herkend.',
+                  title: 'Factuur binnenbrengen',
+                  desc: 'Sleep de PDF in je dashboard, maak een foto van een papieren factuur, of stuur hem door naar je eigen ZenTrack-mailadres (bij een abonnement). Alle drie komen op dezelfde plek terecht.',
                   icon: Camera,
                   color: 'bg-emerald-500',
                 },
@@ -350,7 +350,7 @@ export default function FactuurScannerPage() {
                   <FeatureX text="Typefouten in productnamen en bedragen" />
                   <FeatureX text="Prijsverschillen ontdek je pas maanden later" />
                   <FeatureX text="Geen overzicht van inkoop per leverancier" />
-                  <FeatureX text="Geen logboek — wie heeft wat verwerkt?" />
+                  <FeatureX text="Je facturen zitten in je boekhouding, maar niet op productniveau" />
                 </div>
               </div>
 
@@ -368,7 +368,7 @@ export default function FactuurScannerPage() {
                   <FeatureCheck text="AI herkent producten, prijzen en leveranciers" />
                   <FeatureCheck text="Prijzen per product opgeslagen voor inzicht" />
                   <FeatureCheck text="Binnenkomende voorraad automatisch verwerkt na scan" />
-                  <FeatureCheck text="Doorzoekbaar logboek van iedere verwerkte factuur" />
+                  <FeatureCheck text="Overzicht van je verwerkte facturen, te filteren op leverancier en periode — met de PDF erbij" />
                 </div>
               </div>
             </div>
